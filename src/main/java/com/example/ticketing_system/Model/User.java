@@ -3,6 +3,7 @@ package com.example.ticketing_system.Model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
@@ -10,6 +11,7 @@ import lombok.Setter;
 @Table
 @Getter
 @Setter
+@NoArgsConstructor // JPA hibernate fix
 public class User {
 
     // getters and setters
@@ -30,5 +32,4 @@ public class User {
         this.password = password;
         this.role = role;
     }
-
 }
