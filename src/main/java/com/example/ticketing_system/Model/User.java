@@ -24,7 +24,7 @@ public class User {
     public String password;
 
     // Important Info
-    public String role;
+    public String role = "ROLE_USER"; // role of user
 
     public User(String name, String email, String password, String role) {
         this.name = name;
